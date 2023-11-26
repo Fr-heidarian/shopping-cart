@@ -1,0 +1,22 @@
+/* Our Menu Section */
+.menu .card{
+  height: 460px;
+}
+.menu .card {
+  height: 500px;
+}
+.menu .card-header {
+  height: 50%;
+}
+.menu .card-header img {
+  height: 100%;
+}
+.card-radius {
+  border-radius: 4%;
+  border: none;
+}
+.card-img-radius {
+  border-bottom-left-radius: 15% !important;
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
+}
