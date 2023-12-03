@@ -20,4 +20,9 @@
   border-top-left-radius: 4%;
   border-top-right-radius: 4%;
 }
-
+.nav-pills button.active {
+  background-color: black !important;
+  color: white !important;
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+}

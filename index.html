@@ -17,7 +17,6 @@
 
 <body>
 
-
     <header id="header">
         <div class="d-flex flex-column justify-content-between h-75">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 ">
@@ -45,7 +44,10 @@
                 <!-- header-part right-icons  -->
                 <div class="header-icons d-flex ms-auto align-items-center justify-content-between">
                     <a href="#"><i class="bi bi-person-fill mx-2 text-white"></i></a>
-                    <a href="#"><i class="bi bi-cart-fill mx-2 text-white"></i></a>
+                    <a href="#" class="position-relative">
+                        <i class="bi bi-cart-fill mx-2 text-white"></i>
+                        <span id="total-qty" class="bg-warning p-2 rounded-circle text-white position-absolute">0</span>
+                    </a>
                     <a href="#"><i class="bi bi-search ms-2 text-white"></i></a>
                     <button href="#" class="btn btn-warning rounded-pill ms-4 text-white px-4 py-1" role="button">Order
                         Online</button>
@@ -61,8 +63,8 @@
             <h2>Our Menu</h2>
             <nav class="navbar navbar-expand-lg justify-content-center my-4">
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item rounded-pill px-3 bg-dark mx-2" role="presentation">
-                        <button class="nav-link text-white active" id="pills-all-tab" data-bs-toggle="pill"
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-secondary-emphasis active" id="pills-all-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
                             aria-selected="true">All</button>
                     </li>
@@ -109,7 +111,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$98</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                      <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -131,7 +133,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$20</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
@@ -153,7 +155,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$50</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
@@ -176,7 +178,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$67</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
@@ -199,7 +201,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$35</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
@@ -222,7 +224,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$45</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +247,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$70</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
@@ -267,7 +269,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$40</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
@@ -289,7 +291,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$30</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
@@ -315,7 +317,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$40</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
@@ -339,7 +341,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$20</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
@@ -365,7 +367,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$98</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
@@ -385,7 +387,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$50</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
@@ -405,7 +407,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$35</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
@@ -425,7 +427,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$45</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
@@ -445,7 +447,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$70</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
@@ -469,7 +471,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$67</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
@@ -489,7 +491,7 @@
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
                                         <span>$30</span>
-                                        <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i>
+                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
                                     </div>
                                 </div>
                             </div>
