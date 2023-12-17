@@ -44,10 +44,31 @@
                 <!-- header-part right-icons  -->
                 <div class="header-icons d-flex ms-auto align-items-center justify-content-between">
                     <a href="#"><i class="bi bi-person-fill mx-2 text-white"></i></a>
-                    <a href="#" class="position-relative">
+
+
+                    <!-- Cart -->
+                    <div href="#" class="position-relative">
                         <i class="bi bi-cart-fill mx-2 text-white"></i>
-                        <span id="total-qty" class="bg-warning p-2 rounded-circle text-white position-absolute">0</span>
-                    </a>
+                        <span id="total-qty" class="bg-warning rounded-circle text-white position-absolute">0</span>
+                        <div class="cart-box position-absolute bg-white  p-3 shadow ">
+                            <div class="cart-items  overflow-auto">
+                               
+                                
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center p-3 border-top ">
+                                    <div>
+                                        <span>Total: </span>
+                                        <span>1000$</span>
+                                    </div>
+                                    <a class="btn btn-warning">Check Out</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
                     <a href="#"><i class="bi bi-search ms-2 text-white"></i></a>
                     <button href="#" class="btn btn-warning rounded-pill ms-4 text-white px-4 py-1" role="button">Order
                         Online</button>
@@ -94,12 +115,12 @@
                 <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
                     <div class="row my-5 g-4">
                         <div class="col-md-4">
-                            <div class="card bg-dark card-radius text-white">
+                            <div class="card bg-dark card-radius text-white" id="1">
                                 <div class="card-header">
                                     <img src="assets/images/7.png" alt=""
                                         class="card-img-top card-img-radius  bg-light w-100">
                                 </div>
-                                <div class="card-body  text-start p-4 text-white ">
+                                <div class="card-body text-start p-4 text-white ">
                                     <h5 class="card-title">Delicious Pizza</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                         Illum
@@ -110,14 +131,15 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$98</span>
-                                      <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
+                                        <span class="price-product">$98</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card bg-dark card-radius text-white">
+                            <div class="card bg-dark card-radius text-white" id="2">
                                 <div class="card-header">
                                     <img src="assets/images/5.png" alt=""
                                         class="card-img-top card-img-radius  bg-light w-100">
@@ -132,14 +154,15 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$20</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$20</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card bg-dark card-radius text-white">
+                            <div class="card bg-dark card-radius text-white" id="3">
                                 <div class="card-header">
                                     <img src="assets/images/8.png" alt=""
                                         class="card-img-top card-img-radius  bg-light ">
@@ -154,14 +177,15 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$50</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$50</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card bg-dark card-radius text-white">
+                            <div class="card bg-dark card-radius text-white" id="4">
                                 <div class="card-header">
                                     <img src="assets/images/10.png" alt=""
                                         class="card-img-top card-img-radius  bg-light">
@@ -177,14 +201,15 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$67</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$67</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card bg-dark card-radius text-white">
+                            <div class="card bg-dark card-radius text-white" id="5">
                                 <div class="card-header">
                                     <img src="assets/images/6.png" alt=""
                                         class="card-img-top card-img-radius  bg-light">
@@ -200,14 +225,15 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$35</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$35</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card bg-dark card-radius text-white">
+                            <div class="card bg-dark card-radius text-white" id="6">
                                 <div class="card-header">
                                     <img src="assets/images/7.png" alt=""
                                         class="card-img-top card-img-radius  bg-light">
@@ -223,14 +249,15 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$45</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$45</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card bg-dark card-radius text-white">
+                            <div class="card bg-dark card-radius text-white" id="7">
                                 <div class="card-header">
                                     <img src="assets/images/8.png" alt=""
                                         class="card-img-top card-img-radius  bg-light">
@@ -246,14 +273,15 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$70</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$70</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card bg-dark card-radius text-white">
+                            <div class="card bg-dark card-radius text-white" id="8">
                                 <div class="card-header">
                                     <img src="assets/images/9.png" alt=""
                                         class="card-img-top card-img-radius  bg-light">
@@ -268,14 +296,15 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$40</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$40</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card bg-dark card-radius text-white">
+                            <div class="card bg-dark card-radius text-white" id="9">
                                 <div class="card-header">
                                     <img src="assets/images/10.png" alt=""
                                         class="card-img-top card-img-radius  bg-light">
@@ -290,8 +319,9 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$30</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$30</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -316,8 +346,9 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$40</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$40</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -340,8 +371,9 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$20</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$20</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -366,8 +398,9 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$98</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$98</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -386,8 +419,9 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$50</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$50</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -406,8 +440,9 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$35</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$35</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -426,8 +461,9 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$45</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$45</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -446,8 +482,9 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$70</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$70</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -470,8 +507,9 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$67</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$67</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -490,8 +528,9 @@
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="d-flex justify-content-between">
-                                        <span>$30</span>
-                                            <button class="btn bg-transparent" data-btn="add-to-cart"> <i class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button> 
+                                        <span class="price-product">$30</span>
+                                        <button class="btn bg-transparent" data-btn="add-to-cart"> <i
+                                                class="bi bi-cart-fill text-white rounded-circle px-2 py-1 bg-warning"></i></button>
                                     </div>
                                 </div>
                             </div>

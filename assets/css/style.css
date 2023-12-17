@@ -26,3 +26,17 @@
   border-radius: 2rem;
   padding: 0.5rem 1.5rem;
 }
+#total-qty {
+  font-size: 0.75em;
+  padding: 0 0.5em;
+  left: 8px;
+  top: -13px;
+}
+.cart-box{
+  left: -12rem;
+  z-index: 100;
+}
+.cart-items{
+  width: 400px;
+  height: 500px;
+}
