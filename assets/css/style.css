@@ -32,11 +32,20 @@
   left: 8px;
   top: -13px;
 }
-.cart-box{
+.cart-box {
   left: -12rem;
   z-index: 100;
 }
-.cart-items{
-  width: 400px;
-  height: 500px;
+.cart-items {
+  width: 300px;
+  height: 400px;
+}
+
+
+input[type="password"]{
+
+}
+
+div[data-cart="1"]{
+  
 }
